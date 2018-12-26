@@ -5,7 +5,7 @@ var tabLinks;
 var tabPanels;
 
 window.onload=function() {
-    
+
     // when the page loads, grab the li elements
     tabLinks = document.getElementById("tabs").getElementsByTagName("li");
 	// Now get all the tab panel container divs
@@ -16,12 +16,12 @@ window.onload=function() {
 
     // attach event listener to links using onclick and onfocus, fire the displayPanel function, return false to disable the link
     for (var i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].onclick = function() { 
-			displayPanel(this); 
+        tabLinks[i].onclick = function() {
+			displayPanel(this);
 			return false;
 		}
-        tabLinks[i].onfocus = function() { 
-			displayPanel(this); 
+        tabLinks[i].onfocus = function() {
+			displayPanel(this);
 			return false;
 		}
     }
